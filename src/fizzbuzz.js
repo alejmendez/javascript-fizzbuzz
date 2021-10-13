@@ -3,7 +3,7 @@ const fizzbuzz = number => {
     if (typeof number !== 'number') {
         throw new Error('the argument must be a number');
     }
-    
+
     if (number === 0) {
         return 0;
     }
@@ -23,4 +23,13 @@ const fizzbuzz = number => {
     return number;
 }
 
-module.exports = fizzbuzz;
+const print = (ini, end) => {
+    for (let i = ini; i <= end; i++) {
+        console.log(`${i}: ${fizzbuzz(i)}`);
+    }
+}
+
+module.exports = {
+    fizzbuzz,
+    print,
+};

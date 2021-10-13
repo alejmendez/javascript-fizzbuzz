@@ -1,4 +1,4 @@
-const fizzbuzz = require("./../fizzbuzz");
+const { fizzbuzz } = require("./../fizzbuzz");
 
 describe('fizzbuzz', () => {
     test('should print error message if the argument is not a number', () => {
